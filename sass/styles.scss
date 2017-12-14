@@ -1,0 +1,208 @@
+@mixin long-shadow($size, $color: "") {
+    @if $color == "" {
+        $color: currentColor;
+    }
+
+    $shadow: 0px 0px $color;
+
+    @for $i from 1 through $size {
+        $shadow: #{$shadow}, #{$i}px #{$i}px #{$color};
+    }
+
+    box-shadow: $shadow;
+}
+
+@mixin long-text-shadow($size, $color) {
+    $shadow: 0px 0px 0$color;
+
+    @for $i from 1 through $size {
+        $shadow: #{$shadow}, #{$i}px #{$i}px $color;
+    }
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $color;
+    text-shadow: $shadow;
+}
+
+.has-dark-background,
+.has-light-background {
+    color: #222;
+}
+
+.reveal {
+    .main-title {
+        @include long-shadow(100);
+        transition: all 0.5s ease-out;
+        display: inline-block;
+        padding: 10px 50px;
+        color: #222;
+        border: 10px solid currentColor;
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            line-height: 1.0;
+        }
+
+        h2 {
+            font-size: 50px;
+            margin: 0;
+            line-height: 1.0;
+        }
+    }
+
+
+    h1, h2, h3, h4 {
+        transition: all 0.5s ease-out;
+        color: #222;
+    }
+
+    .browser {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        height: 338px;
+        width: 400px;
+        background-color: #222;
+        border-radius: 8px 8px 0 0;
+        padding: 40px 0 0;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .browser-window {
+        height: 100%;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        position: relative;
+    }
+
+    .browser-icon {
+        position: absolute;
+        top: 11px;
+        right: 12px;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background: #d32f2f;
+    }
+
+    .icon-maximize {
+        right: 42px;
+        background: #FF8F00;
+    }
+
+    .icon-minify {
+        right: 72px;
+        background: #4CAF50;
+    }
+
+    .slider-wrapper {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+    }
+
+    .circular.slider {
+        width: 1200px;
+        left: -400px;
+        height: 300px;
+        position: relative;
+    }
+
+    .linear.slider {
+        width: 1200px;
+        left: 0;
+        height: 300px;
+        position: relative;
+    }
+
+    .linear.slider .page {
+        width: 400px;
+        height: 300px;
+        float: left;
+        display: block;
+        overflow: hidden;
+        color: #fff;
+        font-size: 100px;
+        line-height: 300px;
+        text-align: center;
+    }
+
+    .circular.slider .page {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        left: 400px;
+        display: none;
+        overflow: hidden;
+        color: #fff;
+        font-size: 100px;
+        line-height: 300px;
+        text-align: center;
+    }
+
+    .circular.slider .page.is-active {
+        display: block;
+    }
+
+    .toggle-xray {
+        cursor: pointer;
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        background: #222;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 0);
+
+        &:after {
+            content: 'X-Ray';
+            position: absolute;
+            color: #fff;
+            font-size: 14px;
+            transform: rotate(45deg);
+            top: 50%;
+            left: 50%;
+            margin-top: -20px;
+        }
+    }
+
+    h2:only-child {
+        @include long-text-shadow(8, #222);
+        color: inherit !important;
+    }
+
+    table {
+        color: #222;
+    }
+
+    code {
+        color: #222;
+        font-size: 140%;
+        transition: all 0.5s ease-out;
+    }
+
+    pre {
+        box-shadow: none;
+        width: 80%;
+    }
+
+    table pre {
+        margin: 20px 0;
+        width: auto;
+    }
+
+    .xray-text {
+        display: none;
+    }
+
+    .xray-hidden {
+        visibility: hidden;
+        transition: all 0.5s ease-out;
+    }
+}
+
+@import 'xray';

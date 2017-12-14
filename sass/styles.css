@@ -1,0 +1,201 @@
+.has-dark-background,
+.has-light-background {
+  color: #222; }
+
+.reveal .main-title {
+  box-shadow: 0px 0px currentColor, 1px 1px currentColor, 2px 2px currentColor, 3px 3px currentColor, 4px 4px currentColor, 5px 5px currentColor, 6px 6px currentColor, 7px 7px currentColor, 8px 8px currentColor, 9px 9px currentColor, 10px 10px currentColor, 11px 11px currentColor, 12px 12px currentColor, 13px 13px currentColor, 14px 14px currentColor, 15px 15px currentColor, 16px 16px currentColor, 17px 17px currentColor, 18px 18px currentColor, 19px 19px currentColor, 20px 20px currentColor, 21px 21px currentColor, 22px 22px currentColor, 23px 23px currentColor, 24px 24px currentColor, 25px 25px currentColor, 26px 26px currentColor, 27px 27px currentColor, 28px 28px currentColor, 29px 29px currentColor, 30px 30px currentColor, 31px 31px currentColor, 32px 32px currentColor, 33px 33px currentColor, 34px 34px currentColor, 35px 35px currentColor, 36px 36px currentColor, 37px 37px currentColor, 38px 38px currentColor, 39px 39px currentColor, 40px 40px currentColor, 41px 41px currentColor, 42px 42px currentColor, 43px 43px currentColor, 44px 44px currentColor, 45px 45px currentColor, 46px 46px currentColor, 47px 47px currentColor, 48px 48px currentColor, 49px 49px currentColor, 50px 50px currentColor, 51px 51px currentColor, 52px 52px currentColor, 53px 53px currentColor, 54px 54px currentColor, 55px 55px currentColor, 56px 56px currentColor, 57px 57px currentColor, 58px 58px currentColor, 59px 59px currentColor, 60px 60px currentColor, 61px 61px currentColor, 62px 62px currentColor, 63px 63px currentColor, 64px 64px currentColor, 65px 65px currentColor, 66px 66px currentColor, 67px 67px currentColor, 68px 68px currentColor, 69px 69px currentColor, 70px 70px currentColor, 71px 71px currentColor, 72px 72px currentColor, 73px 73px currentColor, 74px 74px currentColor, 75px 75px currentColor, 76px 76px currentColor, 77px 77px currentColor, 78px 78px currentColor, 79px 79px currentColor, 80px 80px currentColor, 81px 81px currentColor, 82px 82px currentColor, 83px 83px currentColor, 84px 84px currentColor, 85px 85px currentColor, 86px 86px currentColor, 87px 87px currentColor, 88px 88px currentColor, 89px 89px currentColor, 90px 90px currentColor, 91px 91px currentColor, 92px 92px currentColor, 93px 93px currentColor, 94px 94px currentColor, 95px 95px currentColor, 96px 96px currentColor, 97px 97px currentColor, 98px 98px currentColor, 99px 99px currentColor, 100px 100px currentColor;
+  transition: all 0.5s ease-out;
+  display: inline-block;
+  padding: 10px 50px;
+  color: #222;
+  border: 10px solid currentColor; }
+  .reveal .main-title h1 {
+    font-size: 100px;
+    margin: 0;
+    line-height: 1.0; }
+  .reveal .main-title h2 {
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.0; }
+  .reveal h6 {
+    font-size: 20px; 
+    line-height: 10px; 
+    transition: all 0.5s ease-out;}  
+  .reveal h6 a {
+    color: #222;
+  }  
+  .reveal h6 a:hover {
+    color: #444;
+  }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h6 {
+  transition: all 0.5s ease-out;
+  color: #222; }
+.reveal .browser {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  height: 338px;
+  width: 400px;
+  background-color: #222;
+  border-radius: 8px 8px 0 0;
+  padding: 40px 0 0;
+  margin: 0 auto;
+  overflow: hidden; }
+.reveal .browser-window {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  position: relative; }
+.reveal .browser-icon {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #d32f2f; }
+.reveal .icon-maximize {
+  right: 42px;
+  background: #FF8F00; }
+.reveal .icon-minify {
+  right: 72px;
+  background: #4CAF50; }
+.reveal .slider-wrapper {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative; }
+.reveal .circular.slider {
+  width: 1200px;
+  left: -400px;
+  height: 300px;
+  position: relative; }
+.reveal .linear.slider {
+  width: 1200px;
+  left: 0;
+  height: 300px;
+  position: relative; }
+.reveal .linear.slider .page {
+  width: 400px;
+  height: 300px;
+  float: left;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  font-size: 100px;
+  line-height: 300px;
+  text-align: center; }
+.reveal .circular.slider .page {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 400px;
+  display: none;
+  overflow: hidden;
+  color: #fff;
+  font-size: 100px;
+  line-height: 300px;
+  text-align: center; }
+.reveal .circular.slider .page.is-active {
+  display: block; }
+.reveal .toggle-xray {
+  cursor: pointer;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #222;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 0); }
+  .reveal .toggle-xray:after {
+    content: 'X-Ray';
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-top: -20px; }
+.reveal h2.shadow {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #222;
+  text-shadow: 0px 0px 0 #222, 1px 1px #222, 2px 2px #222, 3px 3px #222, 4px 4px #222, 5px 5px #222, 6px 6px #222, 7px 7px #222, 8px 8px #222;
+  color: inherit !important; }
+.reveal table {
+  color: #222; }
+.reveal code {
+  color: #222;
+  font-size: 140%;
+  transition: all 0.5s ease-out; }
+.reveal pre {
+  box-shadow: none;
+  width: 80%; }
+.reveal table pre {
+  margin: 20px 0;
+  width: auto; }
+.reveal .xray-text {
+  display: none; }
+.reveal .xray-hidden {
+  visibility: hidden;
+  transition: all 0.5s ease-out; }
+
+.xray .stroke {
+  display: block;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  height: 340px;
+  width: 400px;
+  background: transparent;
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0 0 10px 1px white;
+  z-index: 200; }
+.xray .main-title {
+  color: #fff !important; }
+.xray h1, .xray h2, .xray h3, .xray h4, .xray h6, .xray a {
+  color: #fff !important; 
+  transition: all 0.5s ease-out;}
+.xray h2.shadow {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: 0px 0px 0 #fff, 1px 1px #fff, 2px 2px #fff, 3px 3px #fff, 4px 4px #fff, 5px 5px #fff, 6px 6px #fff, 7px 7px #fff, 8px 8px #fff;
+  color: #222 !important;
+  transition: all 0.5s ease-out; }
+.xray .slide-background.present {
+  background: #222 !important; }
+.xray .browser-icon {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 5px 1px rgba(255, 255, 255, 0.6); }
+.xray .browser {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 12%, transparent 13%, transparent 100%);
+  box-shadow: inset 0 0 20px 1px #969696, inset 0 0 90px 15px rgba(150, 150, 150, 0.4) 0 0 7px 2px #969696;
+  overflow: visible; }
+.xray .slider-wrapper {
+  overflow: visible; }
+.xray .slider {
+  box-shadow: inset 0 0 20px 1px rgba(150, 150, 150, 0.8), inset 0 0 90px 30px rgba(150, 150, 150, 0.32), 0 0 7px 2px rgba(150, 150, 150, 0.8); }
+.xray .slider .page {
+  background: radial-gradient(ellipse at center, #525252 0%, transparent 30%) !important;
+  box-shadow: inset 0 0 10px 1px #fff, inset 0 0 50px 10px rgba(150, 150, 150, 0.4) 0 0 7px 2px #fff;
+  color: #fff;
+  text-shadow: 0 0 15px #fff; }
+.xray table {
+  color: #fff; }
+  .xray table th, .xray table td {
+    border-color: #fff; }
+.xray code {
+  color: #fff;
+  transition: all 0.5s ease-out; }
+.xray .xray-text {
+  display: block; }
+.xray .noxray-text {
+  display: none; }
+.xray .xray-hidden {
+  visibility: visible;
+  color: #fff !important;
+  transition: all 0.5s ease-out; }
+
+/*# sourceMappingURL=styles.css.map */
